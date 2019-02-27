@@ -57,7 +57,6 @@ client.on('guildMemberAdd', async member => {
 
 	const attachment = new Discord.Attachment(canvas.toBuffer(), 'welcome-image.png');
 
-	channel.send(`Welcome to the server,${member}!`);
 	channel.send(`you are the ${member.guild.memberCount}th Member`, attachment);
 
 });
